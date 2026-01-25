@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-areas: 
+            "c1 c1 c1"
+            "c2 c3 c3"
+            "c4 c4 c4";
+        }
+        .c1{
+            grid-area: c1;
+            border: 1px solid;
+            height: 250px;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+        .c2{
+            grid-area: c2;
+            border: 1px solid;
+            height: 500px;
+            padding-left: 30px;
+            background-color: aliceblue;
+        }
+        .c3{
+            grid-area: c3;
+            border: 1px solid;
+            height: 500px;
+            padding-left: 30px;
+        }
+        .c4{
+            grid-area: c4;
+            border: 1px solid;
+            height: 150px;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="c1">
+        <h1 style="padding-top: 80px;">Header</h1>
+    </div>
+    <div class="c2">
+        <h1 style="font-size: 50px;">Sidebar</h1>
+        <p style="font-size: 30px;">The Menu or quick access content.</p>
+    </div>
+    <div class="c3">
+        <h1 style="font-size: 50px;">Main Content</h1>
+        <p style="font-size: 30px;">The core website content should be displayed here.</p>
+    </div>
+    <div class="c4">
+        <h1 style="padding-top: 40px;">Footer</h1>
+    </div>
+    </section>
+</body>
+</html>
